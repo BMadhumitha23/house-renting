@@ -1,0 +1,136 @@
+HOUSE RENTING MANAGEMENT SYSTEM :
+import java.awt.*;
+import java.awt.event.*;
+
+class frame extends WindowAdapter
+{
+Frame f;
+frame()
+{
+f=new Frame();
+f.setBackground(Color.lightGray);
+f.addWindowListener (this); 
+
+
+Label l=new Label("HOUSE RENTING MANAGEMENT SYSTEM");
+l.setBounds(100,30,190,10);
+f.add(l);
+        
+Label l1=new Label("Customer ID :");
+l1.setBounds(60,70,80,30);
+f.add(l1);
+TextField t1=new TextField();
+t1.setBounds(160,70,100,30);
+f.add(t1);
+Label l2= new Label("FirstName  :");
+l2.setBounds(60,105,80,30);
+f.add(l2);
+TextField t2=new TextField();
+t2.setBounds(160,105,100,30);
+f.add(t2);
+Label l3=new Label("SurName  :");
+l3.setBounds(60,140,80,30);
+f.add(l3);
+TextField t3=new TextField();
+t3.setBounds(160,140,100,30);
+f.add(t3);
+Label l4=new Label("Address :");
+l4.setBounds(60,175,80,30);
+f.add(l4);
+TextArea t4=new TextArea();
+t4.setBounds(160,185,100,50);
+f.add(t4);
+Label l5=new Label("Post Code :");
+l5.setBounds(300,70,80,30);
+f.add(l5);
+TextField t5=new TextField();
+t5.setBounds(400,70,120,30);
+f.add(t5);
+Label l6=new Label("Prove of ID :");
+l6.setBounds(300,105,80,30);
+f.add(l6);
+Choice c=new Choice();
+c.setBounds(400,110,100,35);
+c.add("Ration card");
+c.add("Aadhar card");
+c.add("Pan card");
+c.add("voter id"); 
+f.add(c);
+Label l7=new Label("Down Payment :");
+l7.setBounds(300,140,100,30);
+f.add(l7);
+TextField t6=new TextField();
+t6.setBounds(380,140,145,30);
+f.add(t6);
+Label l8=new Label("Rental Details");
+l8.setBounds(60,250,80,30);
+f.add(l8);
+CheckboxGroup ch=new CheckboxGroup();    
+Checkbox c1=new Checkbox("Flat",ch,false);    
+c1.setBounds(100,280,55,40);
+f.add(c1);
+Checkbox c2=new Checkbox("House",ch,false);
+c2.setBounds(155,280,55,40);
+f.add(c2);
+Label l9=new Label("Number of Room:");
+l9.setBounds(60,315,100,30);
+f.add(l9);
+TextField t7=new TextField();
+t7.setBounds(160,320,100,30);
+f.add(t7);
+Label l10=new Label("Location :");
+l10.setBounds(60,360,80,30);
+f.add(l10);
+TextField t8=new TextField();
+t8.setBounds(160,360,100,30);
+f.add(t8);
+Label l11=new Label("Cost");
+l11.setBounds(60,390,80,30);
+f.add(l11);
+TextField t9=new TextField();
+t9.setBounds(160,395,100,30);
+f.add(t9);
+Label l12=new Label("Utility Bils");
+l12.setBounds(300,250,80,30);
+f.add(l12);
+Label l13=new Label("Electricity :");
+l13.setBounds(300,280,80,30);
+f.add(l13);
+TextField t10=new TextField();
+t10.setBounds(400,280,125,30);
+f.add(t10);
+Label l14=new Label("Water Tax :");
+l14.setBounds(300,325,80,30);
+f.add(l14);
+TextField t11=new TextField();
+t11.setBounds(400,325,125,30);
+f.add(t11);
+Label l15=new Label("House Tax :");
+l15.setBounds(300,370,80,30);
+f.add(l15);
+TextField t12=new TextField();
+t12.setBounds(400,370,125,30);
+f.add(t12);
+Label l16=new Label("Total Payment :");
+l16.setBounds(300,410,80,30);
+f.add(l16);
+TextField t13=new TextField();
+t13.setBounds(400,410,125,30);
+f.add(t13);
+Button b1=new Button("Reset");
+b1.setBounds(60,490,80,30);
+f.add(b1);
+Button b2=new Button("Submit");
+b2.setBounds(300,490,80,30);
+f.add(b2);
+f.setSize(700,600);
+f.setLayout(null);
+f.setVisible(true);
+}
+
+public static void main(String arr[])
+{
+BackgroundPanel back=new BackgroundPanel ();
+frame obj=new frame();
+}
+} 
